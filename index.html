@@ -1,123 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shyam Sundar Sharma | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon-atoms.png" type="image/png">
+    <title>Shyam Sundar Sharma - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Shyam Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <!-- MAGIC BACKGROUND -->
-    <div class="magic-bg"></div>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-left">
-            <h1>Hi, I'm <span>Shyam Sundar Sharma</span></h1>
-            <h3>Full Stack Developer • Software Engineer • AI/ML Developer</h3>
-            <p>
-                Second-year B.Tech CSE student (2028 batch) with hands-on experience in building full-stack web applications, ML/NLP systems, and GenAI-powered prototypes.
-                Skilled in MERN + TypeScript frontends, Python ML/NLP pipelines, LLM integrations (Gemini), prompt engineering, and developing reusable components for scalable solutions.
-                Actively exploring agentic AI and cloud-native practices.
-            </p>
-
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="./image.jpg" alt="Shyam Sundar Sharma" class="profile-image">
+                <div class="profile-glow"></div>
+            </div>
+            <h1 class="hero-name">Shyam Sundar Sharma</h1>
+            <p class="hero-subtitle">Aspiring Software Engineer | AI & Agentic Systems</p>
             <div class="hero-buttons">
-                <a href="#" class="btn">Download Resume</a>
-                <a href="#projects" class="btn outline">View Projects</a>
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
             </div>
         </div>
-
-        <div class="hero-right">
-            <img src="image.jpg" alt="Shyam Image">
-        </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-        <h2 class="section-title">About Me</h2>
-
-        <div class="about-content">
-            <img src="ChatGPT Image Jan 15, 2026, 09_26_19 PM.png" class="about-img" />
-
-            <div class="about-text">
-                <p>
-                    Second-year B.Tech CSE student (2028 batch) with hands-on experience in building full-stack web applications,
-                    ML/NLP systems, and GenAI-powered prototypes. Skilled in MERN + TypeScript,
-                    Python ML/NLP pipelines, LLM integrations (Gemini) and cloud-native systems.
-                </p>
-            </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
-    <section class="education">
-        <h2 class="section-title">Education</h2>
-
-        <div class="edu-card">
-            <img src="College Photo_imgupscaler.ai_General_8K.jpg" class="edu-img">
-            <div class="edu-text">
-                <h3>B.Tech Computer Science Engineering</h3>
-                <p>CGPA: 8.2</p>
-                <p>Siwaich Kendriya Sec Sr School (10th: 86% | 12th: 90%)</p>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle"></i>
+                About Me
+            </h2>
+            <div class="gradient-line"></div>
+            <div class="about-content">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">about.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Shyam Sundar Sharma"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Software Engineer"</span>,
+  <span class="code-property">education</span>: <span class="code-string">"B.Tech CSE"</span>,
+  <span class="code-property">year</span>: <span class="code-number">2</span>,
+  <span class="code-property">interests</span>: [
+    <span class="code-string">"AI/ML"</span>,
+    <span class="code-string">"Full Stack"</span>,
+    <span class="code-string">"NLP"</span>,
+    <span class="code-string">"Agentic Systems"</span>
+  ],
+  <span class="code-property">passion</span>: <span class="code-string">"Building impactful solutions"</span>
+};</code></pre>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm Shyam, a Second-year B.Tech CSE student with a strong passion for building intelligent, scalable and impactful software systems.</p>
+                    <p>I specialize in full-stack web development, AI/ML, NLP, and modern agentic applications.</p>
+                    <p>I enjoy converting ideas into real-world tech solutions with clean design, logical architecture and strong problem-solving.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills">
-        <h2 class="section-title">Skills</h2>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-bolt"></i>
+                Core Skills
+            </h2>
+            <div class="gradient-line"></div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                    </div>
+                </div>
 
-        <div class="skill-grid">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MongoDB</span>
-            <span>Python</span>
-            <span>Machine Learning</span>
-            <span>NLP</span>
-            <span>AI</span>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI / ML Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-Learn</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">OpenAI APIs</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps / Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Other Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">System Design</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECT SECTION -->
-    <section class="projects" id="projects">
-        <h2 class="section-title">Projects</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-rocket"></i>
+                Projects
+            </h2>
+            <div class="gradient-line"></div>
+            <p class="section-subtitle">Real-world tech solutions I've built with clean design and logical architecture</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="project-card">
+                            <h3>Flight Sentiment Analysis</h3>
+                            <p>AI system analyzing flight reviews using NLP techniques to extract sentiment insights from customer feedback.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">TF-IDF</span>
+                                <span class="tech-tag">ML Models</span>
+                            </div>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="project-grid">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="project-card">
+                            <h3>Agentic Knowledge Base</h3>
+                            <p>Intelligent knowledge bot using LangChain + Retrieval for context-aware responses with chat-style interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">AI Agents</span>
+                            </div>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=500">
-                <h3>AI Chatbot</h3>
-                <p>A powerful AI chatbot built using NLP and Python.</p>
-                <a href="#" class="btn">View Project</a>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="project-card">
+                            <h3>BookNest – Book Review Platform</h3>
+                            <p>Full-stack MERN application with authentication, book reviews, search functionality, and modern UI design.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                            <a href="#" class="project-btn">
+                                <i class="fas fa-external-link-alt"></i> View Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="project-card">
+                            <h3>Sentiment Classifier</h3>
+                            <p>ML model to classify positive/negative text using Python and complete ML workflow pipeline.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Scikit-Learn</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">ML Pipeline</span>
+                            </div>
+                            <a href="#" class="project-btn">
+                                <i class="fab fa-github"></i> View GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1581092160620-1e7a9c1d79be?w=500">
-                <h3>Portfolio Website</h3>
-                <p>A fully responsive personal portfolio website.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500">
-                <h3>ML Prediction App</h3>
-                <p>Machine learning model to predict real-world datasets.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Shyam Sundar Sharma | All Rights Reserved</p>
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-graduation-cap"></i>
+                Education
+            </h2>
+            <div class="gradient-line"></div>
+            
+            <!-- College Photo Banner -->
+            <div class="college-photo-banner">
+                <img src="College Photo_imgupscaler.ai_General_8K.jpg" alt="Government Engineering College" class="college-photo">
+                <div class="college-photo-overlay">
+                    <h3>Government Engineering College</h3>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>B.Tech – Computer Science</h3>
+                            <p class="education-period">2024 – 2028</p>
+                            <p class="education-institution">Government Engineering College</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>Intermediate (12th)</h3>
+                            <p class="education-period">2024</p>
+                            <p class="education-institution">Siwaich sec sr school</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="education-card">
+                            <h3>10th Grade</h3>
+                            <p class="education-period">2022</p>
+                            <p class="education-institution">Siwaich School</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-certificate"></i>
+                Certifications
+            </h2>
+            <div class="gradient-line"></div>
+            
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Advanced</h3>
+                    <p>Advanced Python programming concepts and best practices</p>
+                    <a href="#" class="cert-btn">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Quantum Computing</h3>
+                    <p>C-DAC & IIT Roorkee - Quantum computing fundamentals</p>
+                    <a href="https://drive.google.com/file/d/1IiIoOVzJ3h1CPmIeqsTH5Z2yP53etHLD/view?usp=sharing" class="cert-btn" target="_blank">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C++ Programming</h3>
+                    <p>GeeksforGeeks - Advanced C++ programming</p>
+                    <a href="https://drive.google.com/file/d/1k9eMchMzh0SJIPYIeuZSk1kXkp83MRsR/view?usp=sharing" class="cert-btn" target="_blank">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Internship</h3>
+                    <p>AICTE & Edunet Foundation - Modern web development</p>
+                    <a href="https://drive.google.com/file/d/19W3dPB3OZNuhMJYqBuFyuVuAFJSZxui1/view?usp=sharing" class="cert-btn" target="_blank">View Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Programming</h3>
+                    <p>NPTEL - Silver Elite certification</p>
+                    <a href="https://drive.google.com/file/d/1esyR7BfxBQKhtXTAPbqRJYeRMNS-QddX/view?usp=sharing" class="cert-btn" target="_blank">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+            </h2>
+            <div class="gradient-line"></div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaborations, opportunities, or just a friendly chat!</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="/cdn-cgi/l/email-protection#ea9982938b87aa8f928b879a868fc4898587"><span class="__cf_email__" data-cfemail="72011a0b131f32170a131f021e175c111d1f">[ssharma08550@gmail.com &#160;protected]</span></a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/shyamstrategy" target="_blank">github.com/shyam</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/shyam-sundar-sharma-7b285b370?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYKqT3suLTN2Nf5U9fzzSkA%3D%3D" target="_blank">linkedin.com/in/shyam</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Shyam Sundar Sharma. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
 </body>
+
 </html>
