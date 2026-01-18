@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shyamsundarportfolio-xi.vercel.app/sitemap.xml
